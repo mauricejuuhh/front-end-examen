@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="sass/materialize.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+
+  <body class="grey darken-4">
+
+    <div class="container">
+
+
+    <div class="nopadding form-nav" style="width: 270px;">
+      <ul id="slide-out" id="nav" class="sidenav ownsidenav">
+        <li><div class="user-view">
+            <div class="background">
+                <img src="images/office.jpg">
+            </div>
+            <img class="circle" src="images/yuna.jpg">
+            <span class="white-text name">Maurice de Jong</span>
+        </div></li>
+        <li><a class="waves-effect menu-button"><i class="material-icons">account_circle</i>Uw info</a></li>
+        <li><a class="waves-effect menu-button"><i class="material-icons">import_contacts</i>Opleiding</a></li>
+        <li><a class="waves-effect menu-button"><i class="material-icons">domain</i>Indruk op school</a></li>
+        <li><a class="waves-effect menu-button"><i class="material-icons">announcement</i>Bijzonderheden</a></li>
+        <li><a class="waves-effect menu-button"><i class="material-icons">person</i>Mentor</a></li>
+        <li><a class="waves-effect menu-button"><i class="material-icons">send</i>Versturen</a></li>
+      </ul>
+    </div>
+
+      <div class="form grey lighten-3">
+
+        <div class="form_page" style="margin-top: 105px;">
+
+          <div class="col l12 center">
+            <span class="title">Hallo, Wie bent u?</span>
+          </div>
+
+
+          <div class="row">
+            <div class="col offset-l3 l6">
+              <div class="row">
+                <div class="col l7">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="Form_firstname" type="text" class="validate">
+                      <label for="Form_firstname">Voornaam</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input id="birthdate" type="text" class="datepicker">
+                      <label for="birthdate" class="active">Birthdate</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col l5">
+                  <div class="profile-picture">
+                    <img src="images/yuna.jpg" alt="ja">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form_page">
+          <div class="row">
+            <div class="col l12 center">
+              <span class="title">Welke opleiding volgt de leerling?</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="form_page">
+          <div class="col l12 center">
+            <span class="title">Hoe is uw indruk op school over de leerling?</span>
+          </div>
+        </div>
+        <div class="form_page">
+          <div class="col l12 center">
+            <span class="title">Bijzonderheden</span>
+          </div>
+        </div>
+        <div class="form_page">
+          <div class="col l12 center">
+            <span class="title">Uw gegevens</span>
+          </div>
+        </div>
+        <div class="form_page">
+
+        </div>
+
+
+      </div>
+
+        <div class="navigation-bar col l12 grey lighten-2">
+          <div class="right">
+            <a class="waves-effect waves-light btn-small" id="previous">Vorige</a> <a class="waves-effect waves-light btn-small" id="next">Volgende</a>
+          </div>
+        </div>
+        </div>
+
+
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+
+    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
