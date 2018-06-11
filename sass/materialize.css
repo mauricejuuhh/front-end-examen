@@ -5540,7 +5540,8 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .sidenav > a {
     padding: 0 16px; }
   .sidenav .user-view {
-    padding: 16px 16px 0; } }
+    padding: 16px 16px 0;
+    height: 156px; } }
 .sidenav .collapsible-body > ul:not(.collapsible) > li.active,
 .sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active {
   background-color: #ee6e73; }
@@ -6434,7 +6435,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   position: relative;
   width: 100%;
   margin: 0;
-  height: 475px;
+  height: 580px;
   padding-bottom: 0;
   background-color: #fff;
   overflow-y: auto;
@@ -6465,7 +6466,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 475px;
+  height: 580px;
   overflow: hidden;
   border-radius: 10px; }
 
@@ -6494,5 +6495,9 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   width: calc(100% - 270px);
   padding-top: 7px;
   padding-right: 10px; }
+
+.img-block > img {
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=materialize.css.map */

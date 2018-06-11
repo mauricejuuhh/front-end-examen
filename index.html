@@ -23,8 +23,8 @@
             <div class="background">
                 <img src="images/office.jpg">
             </div>
-            <img class="circle" src="images/yuna.jpg">
-            <span class="white-text name">Maurice de Jong</span>
+            <img class="circle user-image" src="images/ma-logo.svg">
+            <span id="nav-name" class="white-text name"></span>
         </div></li>
         <li><a class="waves-effect menu-button"><i class="material-icons">account_circle</i>Uw info</a></li>
         <li><a class="waves-effect menu-button"><i class="material-icons">import_contacts</i>Opleiding</a></li>
@@ -37,7 +37,7 @@
 
       <div class="form grey lighten-3">
 
-        <div class="form_page" style="margin-top: 105px;">
+        <div class="form_page" style="margin-top: 160px;">
 
           <div class="col l12 center">
             <span class="title">Hallo, Wie bent u?</span>
@@ -51,7 +51,7 @@
                   <div class="row">
                     <div class="input-field col s12">
                       <input id="Form_firstname" type="text" class="validate">
-                      <label for="Form_firstname">Voornaam</label>
+                      <label for="Form_firstname">Naam leerling</label>
                     </div>
                     <div class="input-field col s12">
                       <input id="birthdate" type="text" class="datepicker">
@@ -61,8 +61,8 @@
                 </div>
 
                 <div class="col l5">
-                  <div class="profile-picture">
-                    <img src="images/yuna.jpg" alt="ja">
+                  <div class="img-block profile-picture">
+                    <img class="user-image" src="images/ma-logo.svg">
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@
 
         <div class="navigation-bar col l12 grey lighten-2">
           <div class="right">
-            <a class="waves-effect waves-light btn-small" id="previous">Vorige</a> <a class="waves-effect waves-light btn-small" id="next">Volgende</a>
+            <a class="waves-effect waves-light btn-small disabled" id="previous">Vorige</a> <a class="waves-effect waves-light btn-small" id="next">Volgende</a>
           </div>
         </div>
         </div>
