@@ -48,7 +48,6 @@
             <div class="col offset-l3 l6">
               <div class="row">
                 <div class="col l7">
-                  <div class="row">
                     <div class="input-field col s12">
                       <input id="Form_firstname" type="text" class="validate">
                       <label for="Form_firstname">Naam leerling</label>
@@ -57,7 +56,6 @@
                       <input id="birthdate" type="text" class="datepicker">
                       <label for="birthdate" class="active">Birthdate</label>
                     </div>
-                  </div>
                 </div>
 
                 <div class="col l5">
@@ -70,12 +68,144 @@
           </div>
         </div>
         <div class="form_page">
-          <div class="row">
             <div class="col l12 center">
               <span class="title">Welke opleiding volgt de leerling?</span>
             </div>
-          </div>
 
+
+          <div class="row">
+            <div class="col offset-l1 l10">
+              <div class="input-field col s12 center">
+                <select id="leerweg_select">
+                  <option value="" disabled selected>Kies een leerweg</option>
+                  <option value="0">vmbo</option>
+                  <option value="1">havo</option>
+                  <option value="1">vwo</option>
+                  <option value="2">mbo</option>
+                  <option value="">anders</option>
+                </select>
+                <label>Leerweg</label>
+              </div>
+
+
+              <div class="leerweg_input_page">
+                <div class="input-field col s6 center">
+                  <select>
+                    <option value="" disabled selected>Kies een niveau</option>
+                    <option value="vmbo">bb</option>
+                    <option value="havo">kb</option>
+                    <option value="vwo">gl</option>
+                    <option value="mbo">tl</option>
+                    <option value="anders">lwt</option>
+                    <option value="anders">+ lwoo</option>
+                  </select>
+                  <label>Niveau</label>
+                </div>
+                <div class="input-field col s6">
+                  <select>
+                    <option value="" disabled selected>Kies een sector</option>
+                    <option value="vmbo">Economie</option>
+                    <option value="havo">Landbouw</option>
+                    <option value="vwo">Techniek</option>
+                    <option value="mbo">zorg & welzijn</option>
+                  </select>
+                  <label>Sector</label>
+                </div>
+
+
+                <div class="input-field col s12">
+                  Heeft de leerling een keuzevak MVI gedaan?
+                  <label class="noPosition">
+                  <input class="with-gap" name="mvi_radio" type="radio" value="1" />
+                  <span>Ja</span>
+                </label>
+                  <label class="noPosition">
+                    <input class="with-gap" name="mvi_radio" type="radio" value="0" checked />
+                    <span>Nee</span>
+                  </label>
+                </div>
+
+                <div class="mvi_radio-tab">
+                  <div class="input-field col s12">
+                    <input id="mvi_explanation" type="text" class="validate">
+                    <label for="mvi_explanation">zo ja welke:</label>
+                  </div>
+                </div>
+
+
+                <div class="col s12">
+                  Diploma
+                  <div class="input-field inline">
+                    <select>
+                      <option value="vmbo" checked>behaald</option>
+                      <option value="havo">te behalen</option>
+                    </select>
+                  </div>
+                  op:
+
+
+                  <div class="inline input-field">
+                    <input id="diploma_date" type="text" class="datepicker">
+                    <label for="diploma_date" class="active">Datum</label>
+                  </div>
+                </div>
+
+              </div>
+              <div class="leerweg_input_page">
+                <div class="col s12">
+                  Diploma
+                  <div class="input-field inline">
+                    <select>
+                      <option value="behaald" checked>behaald</option>
+                      <option value="te behalen">te behalen</option>
+                    </select>
+                  </div>
+                  op:
+
+
+                  <div class="inline input-field">
+                    <input id="diploma_date2" type="text" class="datepicker">
+                    <label for="diploma_date2" class="active">Datum</label>
+                  </div>
+                </div>
+                <div class="col s12">
+
+
+                  Overgangsbewijs van leerjaar
+                  <div class="input-field inline">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+                  naar leerjaar
+                  <div class="input-field inline">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="leerweg_input_page">
+                <div class="input-field col s6 center">
+                  <select id="opleidingsniveau_select">
+                    <option value="" disabled selected>Kies een Opleidingsniveau</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                  <label>Leerweg</label>
+                </div>
+              </div>
+
+
+
+
+
+
+
+            </div>
+          </div>
         </div>
         <div class="form_page">
           <div class="col l12 center">

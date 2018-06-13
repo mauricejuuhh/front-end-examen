@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   margin: 0;
-  height: 580px;
+  height: 625px;
   padding-bottom: 0;
   background-color: #fff;
   overflow-y: auto;
@@ -33,7 +33,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: 580px;
+  height: 625px;
   overflow: hidden;
   border-radius: 10px;
 
@@ -67,4 +67,12 @@
 .img-block > img {
   width: 100%;
   height: 100%;
+}
+.noPosition {
+  position: relative !important;
+}
+.leerweg_input_page, .mvi_radio-tab {
+  position: relative;
+  clear: both;
+  display: none;
 }

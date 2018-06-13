@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    //Load materialize items
+        $('select').formSelect();
+        $('.datepicker').datepicker();
+
 
     //checked on wich button you clicked and go's to that page number
     $('.menu-button').click(function () {
@@ -11,6 +15,7 @@ $(document).ready(function() {
 
         if ($currentPage !== $pageNumber && $navClickable === 1) {
             $navClickable = 0;
+            $currentPage = $pageNumber;
 
             $('.form_page').fadeOut(250);
             $('.form_page').eq($pageNumber).delay(250).fadeIn(250);
@@ -36,8 +41,7 @@ $(document).ready(function() {
             $("#next").removeClass("disabled");
         }
 
-        
-        $currentPage = $pageNumber;
+
     };
 
     $navClickable = 1;
@@ -45,7 +49,7 @@ $(document).ready(function() {
     $totalPages = $(".menu-button").length - 1;
 
     //Start page
-    $GoToPage(0);
+    $GoToPage(1);
 
 
     
@@ -74,7 +78,7 @@ $(document).ready(function() {
 
 // All code for nav menu
 
-    // nav menu top avatar image
+    // nav menu top avatar image & image upload
     $changeImage = function(input) {
         if (input.files && input.files[0]) {
             let reader = new FileReader();
@@ -93,7 +97,7 @@ $(document).ready(function() {
 
 
 
-    // nav menu top name
+    // nav menu top name: changes name when it is changed
     $('#Form_firstname').change(function () {
         $("#nav-name").fadeOut(function () {
             $(this).text($('#Form_firstname').val());
@@ -101,6 +105,28 @@ $(document).ready(function() {
     });
 
 
+
+
+// "opleiding" form tab
+    $vorige_leerweg_select = null;
+    $('#leerweg_select').change(function () {
+        $leerweg_select = $('#leerweg_select').val();
+
+        if ($leerweg_select != null && $leerweg_select !== "" && $vorige_leerweg_select !== $leerweg_select) {
+            $('.leerweg_input_page').fadeOut(250);
+            $('.leerweg_input_page').eq($leerweg_select).delay(250).fadeIn(250);
+        }
+        $vorige_leerweg_select = $leerweg_select;
+    });
+
+    $('input[name="mvi_radio"]').change(function () {
+        $mvi_radio_value = $('input[name="mvi_radio"]:checked').val();
+        if ($mvi_radio_value === "1") {
+            $('.mvi_radio-tab').slideDown();
+        } else {
+            $('.mvi_radio-tab').slideUp();
+        }
+    });
 
 
 });
