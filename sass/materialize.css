@@ -6435,7 +6435,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   position: relative;
   width: 100%;
   margin: 0;
-  height: 625px;
+  height: 650px;
   padding-bottom: 0;
   background-color: #fff;
   overflow-y: auto;
@@ -6466,7 +6466,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 625px;
+  height: 650px;
   overflow: hidden;
   border-radius: 10px; }
 
@@ -6507,5 +6507,13 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   position: relative;
   clear: both;
   display: none; }
+
+.form_page {
+  width: 100%; }
+
+.justify-center {
+  justify-content: center;
+  align-items: center;
+  display: flex; }
 
 /*# sourceMappingURL=materialize.css.map */

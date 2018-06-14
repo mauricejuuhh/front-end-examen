@@ -25,22 +25,20 @@ $(document).ready(function() {
             $goToPageTimeOut = setTimeout(function () {
                 $navClickable = 1;
             }, 500);
+
+            if ($pageNumber === 0 || $pageNumber <= 0) {
+                $("#previous").addClass("disabled");
+            } else {
+                $("#previous").removeClass("disabled");
+            }
+
+
+            if ($pageNumber === $totalPages || $pageNumber >= $totalPages) {
+                $("#next").addClass("disabled");
+            } else {
+                $("#next").removeClass("disabled");
+            }
         }
-
-        
-        if ($pageNumber === 0 || $pageNumber <= 0) {
-            $("#previous").addClass("disabled");
-        } else {
-            $("#previous").removeClass("disabled");
-        }
-
-
-        if ($pageNumber === $totalPages || $pageNumber >= $totalPages) {
-            $("#next").addClass("disabled");
-        } else {
-            $("#next").removeClass("disabled");
-        }
-
 
     };
 
@@ -49,7 +47,7 @@ $(document).ready(function() {
     $totalPages = $(".menu-button").length - 1;
 
     //Start page
-    $GoToPage(1);
+    $GoToPage(0);
 
 
     
@@ -112,9 +110,12 @@ $(document).ready(function() {
     $('#leerweg_select').change(function () {
         $leerweg_select = $('#leerweg_select').val();
 
-        if ($leerweg_select != null && $leerweg_select !== "" && $vorige_leerweg_select !== $leerweg_select) {
-            $('.leerweg_input_page').fadeOut(250);
-            $('.leerweg_input_page').eq($leerweg_select).delay(250).fadeIn(250);
+        if ($vorige_leerweg_select !== $leerweg_select) {
+            $('.leerweg_input_page').slideUp(250);
+
+            if($leerweg_select !== "") {
+                $('.leerweg_input_page').eq($leerweg_select).slideDown(250);
+            }
         }
         $vorige_leerweg_select = $leerweg_select;
     });

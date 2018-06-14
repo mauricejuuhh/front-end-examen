@@ -17,8 +17,8 @@
     <div class="container">
 
 
-    <div class="nopadding form-nav" style="width: 270px;">
-      <ul id="slide-out" id="nav" class="sidenav ownsidenav">
+    <nav class="nopadding form-nav" style="width: 270px;">
+      <ul id="slide-out" class="sidenav ownsidenav">
         <li><div class="user-view">
             <div class="background">
                 <img src="images/office.jpg">
@@ -33,11 +33,11 @@
         <li><a class="waves-effect menu-button"><i class="material-icons">person</i>Mentor</a></li>
         <li><a class="waves-effect menu-button"><i class="material-icons">send</i>Versturen</a></li>
       </ul>
-    </div>
+    </nav>
 
-      <div class="form grey lighten-3">
+      <div class="form grey lighten-3 justify-center">
 
-        <div class="form_page" style="margin-top: 160px;">
+        <div class="form_page">
 
           <div class="col l12 center">
             <span class="title">Hallo, Wie bent u?</span>
@@ -86,6 +86,10 @@
                 </select>
                 <label>Leerweg</label>
               </div>
+
+
+
+
 
 
               <div class="leerweg_input_page">
@@ -170,34 +174,46 @@
                 </div>
                 <div class="col s12">
 
-
-                  Overgangsbewijs van leerjaar
-                  <div class="input-field inline">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Last Name</label>
-                </div>
-                  naar leerjaar
-                  <div class="input-field inline">
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Last Name</label>
+                  <div class="col s12 nopadding">
+                    Overgangsbewijs van leerjaar:
+                    <div class="input-field inline">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Last Name</label>
+                    </div>
+                  </div>
+                  <div class="col s12 nopadding">
+                    naar leerjaar:
+                    <div class="input-field inline">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Last Name</label>
+                    </div>
                   </div>
 
 
                 </div>
               </div>
               <div class="leerweg_input_page">
+
                 <div class="input-field col s6 center">
                   <select id="opleidingsniveau_select">
-                    <option value="" disabled selected>Kies een Opleidingsniveau</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+                    <option value="" disabled selected>Kies een Leerweg</option>
+                    <option value="bol">BOL</option>
+                    <option value="bbl">BBL</option>
                   </select>
                   <label>Leerweg</label>
                 </div>
-              </div>
 
+                <div class="input-field col s6 center">
+                  <select id="opleidingsniveau_select">
+                    <option value="" disabled selected>Kies een Opleidingsniveau</option>
+                    <option value="1">Niveau 1</option>
+                    <option value="2">Niveau 2</option>
+                    <option value="3">Niveau 3</option>
+                    <option value="4">Niveau 4</option>
+                  </select>
+                  <label>Opleidingsniveau</label>
+                </div>
+              </div>
 
 
 

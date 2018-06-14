@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   margin: 0;
-  height: 625px;
+  height: 650px;
   padding-bottom: 0;
   background-color: #fff;
   overflow-y: auto;
@@ -33,7 +33,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: 625px;
+  height: 650px;
   overflow: hidden;
   border-radius: 10px;
 
@@ -75,4 +75,15 @@
   position: relative;
   clear: both;
   display: none;
+}
+.form_page {
+  //position: relative;
+  //top: 50%;
+  //transform: translateY(-50%);
+  width: 100%;
+}
+.justify-center {
+  justify-content: center;
+  align-items: center;
+  display: flex
 }
