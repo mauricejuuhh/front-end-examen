@@ -10,6 +10,12 @@ $(document).ready(function() {
         $GoToPage($clickedNavElement);
     });
 
+
+
+
+
+
+
     //Go to spesific page function
     $GoToPage = function ($pageNumber) {
 
@@ -50,7 +56,8 @@ $(document).ready(function() {
     $GoToPage(0);
 
 
-    
+
+
 //All code for NEXT click button
 
     //Next button function - Go's to the next page
@@ -118,6 +125,7 @@ $(document).ready(function() {
             }
         }
         $vorige_leerweg_select = $leerweg_select;
+
     });
 
     $('input[name="mvi_radio"]').change(function () {
