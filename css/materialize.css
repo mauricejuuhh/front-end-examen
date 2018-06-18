@@ -6471,7 +6471,8 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   float: left;
   position: absolute;
   height: 100%;
-  top: 0; }
+  top: 0;
+  left: 0; }
 
 .container {
   position: absolute;
@@ -6525,5 +6526,8 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 
 .form_page {
   width: 100%; }
+
+table {
+  font-weight: bold; }
 
 /*# sourceMappingURL=materialize.css.map */
