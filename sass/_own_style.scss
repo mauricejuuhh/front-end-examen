@@ -1,8 +1,8 @@
 .ownsidenav {
   position: relative;
-  width: 100%;
+  width: 270px;
   margin: 0;
-  height: 650px;
+  height: 100%;
   padding-bottom: 0;
   background-color: #fff;
   overflow-y: auto;
@@ -20,7 +20,9 @@
   height: calc(100% - 45px);
   width: calc(100% - 270px);
   float: left;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   overflow-y: scroll;
 
   &-center {
@@ -37,6 +39,10 @@
 .form-nav {
   width: 270px;
   float: left;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .container {
   position: absolute;
