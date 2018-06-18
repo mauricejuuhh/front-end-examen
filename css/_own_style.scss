@@ -17,10 +17,12 @@ nav {
     display: table;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 
     &-mid {
       display: table-cell;
       vertical-align: middle;
+      overflow: hidden;
     }
   }
 }
@@ -96,7 +98,7 @@ table {
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
   .ownsidenav {
     position: relative;
     width: 270px;
