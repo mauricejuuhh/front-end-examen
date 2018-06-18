@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    //Load materialize items
+        $('select').formSelect();
+        $('.datepicker').datepicker();
+
 
     //checked on wich button you clicked and go's to that page number
     $('.menu-button').click(function () {
@@ -6,11 +10,18 @@ $(document).ready(function() {
         $GoToPage($clickedNavElement);
     });
 
+
+
+
+
+
+
     //Go to spesific page function
     $GoToPage = function ($pageNumber) {
 
         if ($currentPage !== $pageNumber && $navClickable === 1) {
             $navClickable = 0;
+            $currentPage = $pageNumber;
 
             $('.form_page').fadeOut(250);
             $('.form_page').eq($pageNumber).delay(250).fadeIn(250);
@@ -20,24 +31,21 @@ $(document).ready(function() {
             $goToPageTimeOut = setTimeout(function () {
                 $navClickable = 1;
             }, 500);
+
+            if ($pageNumber === 0 || $pageNumber <= 0) {
+                $("#previous").addClass("disabled");
+            } else {
+                $("#previous").removeClass("disabled");
+            }
+
+
+            if ($pageNumber === $totalPages || $pageNumber >= $totalPages) {
+                $("#next").addClass("disabled");
+            } else {
+                $("#next").removeClass("disabled");
+            }
         }
 
-        
-        if ($pageNumber === 0 || $pageNumber <= 0) {
-            $("#previous").addClass("disabled");
-        } else {
-            $("#previous").removeClass("disabled");
-        }
-
-
-        if ($pageNumber === $totalPages || $pageNumber >= $totalPages) {
-            $("#next").addClass("disabled");
-        } else {
-            $("#next").removeClass("disabled");
-        }
-
-        
-        $currentPage = $pageNumber;
     };
 
     $navClickable = 1;
@@ -48,7 +56,8 @@ $(document).ready(function() {
     $GoToPage(0);
 
 
-    
+
+
 //All code for NEXT click button
 
     //Next button function - Go's to the next page
@@ -74,7 +83,7 @@ $(document).ready(function() {
 
 // All code for nav menu
 
-    // nav menu top avatar image
+    // nav menu top avatar image & image upload
     $changeImage = function(input) {
         if (input.files && input.files[0]) {
             let reader = new FileReader();
@@ -93,7 +102,7 @@ $(document).ready(function() {
 
 
 
-    // nav menu top name
+    // nav menu top name: changes name when it is changed
     $('#Form_firstname').change(function () {
         $("#nav-name").fadeOut(function () {
             $(this).text($('#Form_firstname').val());
@@ -101,6 +110,32 @@ $(document).ready(function() {
     });
 
 
+
+
+// "opleiding" form tab
+    $vorige_leerweg_select = null;
+    $('#leerweg_select').change(function () {
+        $leerweg_select = $('#leerweg_select').val();
+
+        if ($vorige_leerweg_select !== $leerweg_select) {
+            $('.leerweg_input_page').slideUp(250);
+
+            if($leerweg_select !== "") {
+                $('.leerweg_input_page').eq($leerweg_select).slideDown(250);
+            }
+        }
+        $vorige_leerweg_select = $leerweg_select;
+
+    });
+
+    $('input[name="mvi_radio"]').change(function () {
+        $mvi_radio_value = $('input[name="mvi_radio"]:checked').val();
+        if ($mvi_radio_value === "1") {
+            $('.mvi_radio-tab').slideDown();
+        } else {
+            $('.mvi_radio-tab').slideUp();
+        }
+    });
 
 
 });
