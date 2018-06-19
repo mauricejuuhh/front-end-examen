@@ -6521,8 +6521,14 @@ nav {
 table {
   font-weight: bold; }
 
-.notBold {
-  font-weight: 400; }
+.bold {
+  font-weight: 500; }
+
+.breakPoint {
+  display: inline-block; }
+
+.common {
+  width: 100%; }
 
 @media screen and (min-width: 992px) {
   .ownsidenav {

@@ -6847,6 +6847,7 @@ $jscomp.polyfill = function (e, r, p, m) {
       $('body').append(hiddenDiv);
     }
 
+
     // Set font properties of hiddenDiv
     var fontFamily = $textarea.css('font-family');
     var fontSize = $textarea.css('font-size');
@@ -6897,9 +6898,11 @@ $jscomp.polyfill = function (e, r, p, m) {
     // Approximate with half of window size
 
     if ($textarea[0].offsetWidth > 0 && $textarea[0].offsetHeight > 0) {
-      hiddenDiv.css('width', $textarea.width() + 'px');
+      hiddenDiv.css('width', '100%');
+      // hiddenDiv.css('width', $textarea.width() + 'px');
     } else {
-      hiddenDiv.css('width', window.innerWidth / 2 + 'px');
+      hiddenDiv.css('width', '100%');
+        // hiddenDiv.css('width', window.innerWidth / 2 + 'px');
     }
 
     /**
