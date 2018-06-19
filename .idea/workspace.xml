@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/css/materialize.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/materialize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/materialize.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/materialize.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/materialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/materialize.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="196" column="30" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
+            <state relative-caret-position="-3740">
+              <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -49,8 +48,8 @@
       <file leaf-file-name="_own_style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/_own_style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="11" />
+            <state relative-caret-position="356">
+              <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -73,6 +72,8 @@
       <find>width</find>
       <find>hiddend</find>
       <find>leerweg</find>
+      <find>bijzonder</find>
+      <find>title</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -187,15 +188,15 @@
       <workItem from="1528874653120" duration="13544000" />
       <workItem from="1528975241491" duration="10620000" />
       <workItem from="1529305135811" duration="75000" />
-      <workItem from="1529390711711" duration="8369000" />
+      <workItem from="1529390711711" duration="10782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90377000" />
+    <option name="totallyTimeSpent" value="92790000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07823961" />
@@ -452,15 +453,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/_own_style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="11" />
+        <state relative-caret-position="356">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="196" column="30" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
+        <state relative-caret-position="-3740">
+          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />

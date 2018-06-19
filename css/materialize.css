@@ -6481,7 +6481,8 @@ nav {
   font-size: 25px;
   font-weight: 700;
   text-align: center;
-  color: #828282; }
+  color: #828282;
+  padding-bottom: 40px; }
 
 .profile-picture {
   width: 110px;
@@ -6524,11 +6525,15 @@ table {
 .bold {
   font-weight: 500; }
 
+.notBold {
+  font-weight: 400; }
+
 .breakPoint {
   display: inline-block; }
 
 .common {
-  width: 100%; }
+  width: 100%;
+  display: none; }
 
 @media screen and (min-width: 992px) {
   .ownsidenav {
