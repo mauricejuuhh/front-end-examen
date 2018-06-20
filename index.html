@@ -95,26 +95,26 @@
 
 
                   <div class="leerweg_input_page">
-                    <div class="input-field col s12 m6 center">
-                      <select>
-                        <option value="vmbo" selected>bb</option>
-                        <option value="havo">kb</option>
-                        <option value="vwo">gl</option>
-                        <option value="mbo">tl</option>
-                        <option value="anders">lwt</option>
-                        <option value="anders">+ lwoo</option>
-                      </select>
-                      <label>Niveau</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                      <select>
-                        <option value="vmbo" selected>Economie</option>
-                        <option value="havo">Landbouw</option>
-                        <option value="vwo">Techniek</option>
-                        <option value="mbo">zorg & welzijn</option>
-                      </select>
-                      <label>Sector</label>
-                    </div>
+                      <div class="input-field col s12 m6 center">
+                        <select>
+                          <option value="vmbo" selected>bb</option>
+                          <option value="havo">kb</option>
+                          <option value="vwo">gl</option>
+                          <option value="mbo">tl</option>
+                          <option value="anders">lwt</option>
+                          <option value="anders">+ lwoo</option>
+                        </select>
+                        <label>Niveau</label>
+                      </div>
+                      <div class="input-field col s12 m6">
+                        <select>
+                          <option value="vmbo" selected>Economie</option>
+                          <option value="havo">Landbouw</option>
+                          <option value="vwo">Techniek</option>
+                          <option value="mbo">zorg & welzijn</option>
+                        </select>
+                        <label>Sector</label>
+                      </div>
 
 
                     <div class="input-field col s12">
@@ -307,7 +307,7 @@
 
                   <div class="row" style="margin-top: 10px;">
                     <div class="input-field col s12">
-                      <textarea id="toelichting" class="materialize-textarea"></textarea>
+                      <input id="toelichting" type="text" class="validate">
                       <label for="toelichting">Toelichting</label>
                     </div>
                   </div>
@@ -321,7 +321,7 @@
               </div>
 
               <div class="row">
-                <span class="pink-text bold">Heeft de leerling een aandoening en/of beperking die van invloed op de studie is of kan zijn?</span>
+                <div class="pink-text bold grey lighten-2 padding">Heeft de leerling een aandoening en/of beperking die van invloed op de studie is of kan zijn?</div>
                 <table>
                   <tr>
                     <th class="notBold">Volgt de leerling speciaal onderwijs?</th>
@@ -381,7 +381,7 @@
                       <div class="switch">
                         <label>
                           Nee
-                          <input type="checkbox">
+                          <input type="checkbox" id="toggle_box">
                           <span class="lever"></span>
                           Ja
                         </label>
@@ -392,16 +392,16 @@
             </div>
 
               <div class="row">
-                <div class="input-field col s12">
-                  <textarea id="BijzonderhedenWelkeZorg" class="materialize-textarea"></textarea>
-                  <label for="BijzonderhedenWelkeZorg">Zoja, welke zorg?</label>
+                <div class="input-field col s12" id="toggle_box2">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Zoja, welke zorg?</label>
                 </div>
               </div>
 
               <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="PersoonlijkOmstandigheden" class="materialize-textarea"></textarea>
-                  <label for="PersoonlijkOmstandigheden">andere persoonlijke omstandigheden?</label>
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">andere persoonlijke omstandigheden?</label>
                   <span class="helper-text">Hieronder verstaat het Mediacollege Amsterdam bijzonderheden/beperkingen die van invloed kunnen zijn op het succesvol volgen van de opleiding zoals o.a. epilepsie, slechthorendheid, ADHD, suikerziekte etc.</span>
                 </div>
               </div>
@@ -410,7 +410,7 @@
             </div>
             <div class="form_page">
               <div class="col l12 center">
-                <span class="title">Uw gegevens</span>
+                <div class="title">Uw gegevens</div>
               </div>
 
                 <div class="row">
@@ -494,6 +494,6 @@
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/form.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
   </body>
 </html>

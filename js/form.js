@@ -1,7 +1,9 @@
 $(document).ready(function() {
     //Load materialize items
         $('select').formSelect();
-        $('.datepicker').datepicker();
+    $('.datepicker').datepicker({
+        yearRange: 120,
+    });
 
 
     //checked on wich button you clicked and go's to that page number
@@ -111,7 +113,6 @@ $(document).ready(function() {
 
 
 
-
 // "opleiding" form tab
     $vorige_leerweg_select = null;
     $('#leerweg_select').change(function () {
@@ -137,5 +138,19 @@ $(document).ready(function() {
         }
     });
 
+
+
+
+//    "bijzonderheden" form tab
+    $('#toggle_box').change(function () {
+        $toggle_box = $('#toggle_box').is(":checked");
+
+        if ($toggle_box === true) {
+            $('#toggle_box2').slideDown();
+        } else {
+            $('#toggle_box2').slideUp();
+        }
+
+    });
 
 });

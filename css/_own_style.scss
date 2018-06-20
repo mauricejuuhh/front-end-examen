@@ -46,7 +46,6 @@ nav {
   max-height: 650px;
   overflow: hidden;
   border-radius: 10px;
-
 }
 .title {
   font-size: 25px;
@@ -82,7 +81,7 @@ nav {
 .noPosition {
   position: relative !important;
 }
-.leerweg_input_page, .mvi_radio-tab {
+.leerweg_input_page, .mvi_radio-tab, #toggle_box2 {
   position: relative;
   clear: both;
   display: none;
@@ -106,6 +105,9 @@ table {
 .common {
   width: 100%;
   display: none;
+}
+.padding {
+  padding: 15px 5px;
 }
 
 @media screen and (min-width: 992px) {
