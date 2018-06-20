@@ -45,9 +45,18 @@
 
 
               <div class="row">
-                <div class="col offset-l3 l6">
+                <div class="col offset-s2 s8 offset-m3 m6 offset-l3 l6 offset-xl4 xl4">
                   <div class="row">
-                    <div class="col l7">
+
+
+
+                    <div class="col s12 l5 push-l7">
+                      <div class="img-block profile-picture">
+                        <img class="user-image" src="images/ma-logo.svg">
+                      </div>
+                    </div>
+
+                      <div class="col s12 l7 pull-l5">
                         <div class="input-field col s12">
                           <input id="Form_firstname" type="text" class="validate">
                           <label for="Form_firstname">Naam leerling</label>
@@ -56,13 +65,9 @@
                           <input id="birthdate" type="text" class="datepicker">
                           <label for="birthdate" class="active">Geboortedatum</label>
                         </div>
-                    </div>
-
-                    <div class="col l5">
-                      <div class="img-block profile-picture">
-                        <img class="user-image" src="images/ma-logo.svg">
                       </div>
-                    </div>
+
+
                   </div>
                 </div>
               </div>
@@ -90,32 +95,31 @@
 
 
                   <div class="leerweg_input_page">
-                    <div class="input-field col s12 m6 center">
-                      <select>
-                        <option value="" disabled selected>Kies een niveau</option>
-                        <option value="vmbo">bb</option>
-                        <option value="havo">kb</option>
-                        <option value="vwo">gl</option>
-                        <option value="mbo">tl</option>
-                        <option value="anders">lwt</option>
-                        <option value="anders">+ lwoo</option>
-                      </select>
-                      <label>Niveau</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                      <select>
-                        <option value="" disabled selected>Kies een sector</option>
-                        <option value="vmbo">Economie</option>
-                        <option value="havo">Landbouw</option>
-                        <option value="vwo">Techniek</option>
-                        <option value="mbo">zorg & welzijn</option>
-                      </select>
-                      <label>Sector</label>
-                    </div>
+                      <div class="input-field col s12 m6 center">
+                        <select>
+                          <option value="vmbo" selected>bb</option>
+                          <option value="havo">kb</option>
+                          <option value="vwo">gl</option>
+                          <option value="mbo">tl</option>
+                          <option value="anders">lwt</option>
+                          <option value="anders">+ lwoo</option>
+                        </select>
+                        <label>Niveau</label>
+                      </div>
+                      <div class="input-field col s12 m6">
+                        <select>
+                          <option value="vmbo" selected>Economie</option>
+                          <option value="havo">Landbouw</option>
+                          <option value="vwo">Techniek</option>
+                          <option value="mbo">zorg & welzijn</option>
+                        </select>
+                        <label>Sector</label>
+                      </div>
 
 
                     <div class="input-field col s12">
                       Heeft de leerling een keuzevak MVI gedaan?
+                      <div class="breakPoint">
                       <label class="noPosition">
                       <input class="with-gap" name="mvi_radio" type="radio" value="1" />
                       <span>Ja</span>
@@ -124,6 +128,7 @@
                         <input class="with-gap" name="mvi_radio" type="radio" value="0" checked />
                         <span>Nee</span>
                       </label>
+                      </div>
                     </div>
 
                     <div class="mvi_radio-tab">
@@ -142,16 +147,20 @@
                           <option value="havo">te behalen</option>
                         </select>
                       </div>
+
+
+                      <div class="breakPoint">
                       op:
 
 
-                      <div class="inline input-field">
-                        <input id="diploma_date" type="text" class="datepicker">
-                        <label for="diploma_date" class="active">Datum</label>
+                        <div class="inline input-field">
+                          <input id="diploma_date" type="text" class="datepicker">
+                          <label for="diploma_date" class="active">Datum</label>
+                        </div>
                       </div>
                     </div>
 
-                  </div>
+                </div>
                   <div class="leerweg_input_page">
                     <div class="col s12">
                       Diploma
@@ -161,12 +170,14 @@
                           <option value="te behalen">te behalen</option>
                         </select>
                       </div>
+                      <div class="breakPoint">
                       op:
 
 
                       <div class="inline input-field">
                         <input id="diploma_date2" type="text" class="datepicker">
                         <label for="diploma_date2" class="active">Datum</label>
+                      </div>
                       </div>
                     </div>
                     <div class="col s12">
@@ -177,14 +188,17 @@
                           <input id="last_name" type="text" class="validate">
                           <label for="last_name">Last Name</label>
                         </div>
-                      </div>
-                      <div class="col s12 nopadding">
-                        naar leerjaar:
-                        <div class="input-field inline">
-                          <input id="last_name" type="text" class="validate">
-                          <label for="last_name">Last Name</label>
+                        <div class="breakPoint">
+                          naar leerjaar:
+                          <div class="input-field inline">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                          </div>
                         </div>
                       </div>
+
+
+
 
 
                     </div>
@@ -193,8 +207,7 @@
 
                     <div class="input-field col s6 center">
                       <select id="opleidingsniveau_select">
-                        <option value="" disabled selected>Kies een Leerweg</option>
-                        <option value="bol">BOL</option>
+                        <option value="bol" selected>BOL</option>
                         <option value="bbl">BBL</option>
                       </select>
                       <label>Leerweg</label>
@@ -202,8 +215,7 @@
 
                     <div class="input-field col s6 center">
                       <select id="opleidingsniveau_select">
-                        <option value="" disabled selected>Kies een Opleidingsniveau</option>
-                        <option value="1">Niveau 1</option>
+                        <option value="1" selected>Niveau 1</option>
                         <option value="2">Niveau 2</option>
                         <option value="3">Niveau 3</option>
                         <option value="4">Niveau 4</option>
@@ -217,153 +229,85 @@
                 </div>
               </div>
             </div>
-            <div class="form_page">
+            <div class="form_page" style="line-height: 45px;">
               <div class="col l12 center">
                 <span class="title">Hoe is uw indruk op school over de leerling?</span>
               </div>
 
+              <div class="row">
+                <div class="col s12 l5"></div>
+                <div class="col s12 l7">
+                  <div class="col s3 center bold">Goed</div>
+                  <div class="col s3 center bold">Vold..</div>
+                  <div class="col s3 center bold">Zwak</div>
+                  <div class="col s3 center bold">Onvold..</div>
+                </div>
+              </div>
 
+              <div class="row">
+                <div class="pink-text grey lighten-2 col s12 bold">werkhouding</div>
+                <div class="col s12 l5">Consentratie</div>
+                <div class="col s12 l7">
+                  <div class="col s3 center"><label><input class="with-gap" name="Consentratie_radio_button" type="radio" value="Goed"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Consentratie_radio_button" type="radio" value="Voldoende"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Consentratie_radio_button" type="radio" value="Zwak"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Consentratie_radio_button" type="radio" value="Onvoldoende"/><span></span></label></div>
+                </div>
+                <div class="col s12 l5">Werktempo</div>
+                <div class="col s12 l7">
+                  <div class="col s3 center"><label><input class="with-gap" name="Werktempo_radio_button" type="radio" value="Goed"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Werktempo_radio_button" type="radio" value="Voldoende"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Werktempo_radio_button" type="radio" value="Zwak"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Werktempo_radio_button" type="radio" value="Onvoldoende"/><span></span></label></div>
+                </div>
+                <div class="col s12 l5">Zelfstandig werken</div>
+                <div class="col s12 l7">
+                  <div class="col s3 center"><label><input class="with-gap" name="ZelfstandigWerken_radio_button" type="radio" value="Goed"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="ZelfstandigWerken_radio_button" type="radio" value="Voldoende"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="ZelfstandigWerken_radio_button" type="radio" value="Zwak"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="ZelfstandigWerken_radio_button" type="radio" value="Onvoldoende"/><span></span></label></div>
+                </div>
+              </div>
 
-              <table style="margin-top: 10px;">
-                <tr>
-                  <th></th>
-                  <th class="center">Goed</th>
-                  <th class="center">Voldoende</th>
-                  <th class="center">Zwak</th>
-                  <th class="center">Onvoldoende</th>
-                </tr>
-                <tr>
-                  <th>werkhouding</th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <th class="notBold">Consentratie</th>
-                  <th class="center">
-                    <label><input class="with-gap" name="consentratie_radio_button" type="radio" value="Goed"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="consentratie_radio_button" type="radio" value="Voldoende"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="consentratie_radio_button" type="radio" value="Zwak"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="consentratie_radio_button" type="radio" value="Onvoldoende"/><span></span></label>
-                  </th>
-                </tr>
-                <tr>
-                  <th class="notBold">Werktempo</th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Werktempo_radio_button" type="radio" value="Goed"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Werktempo_radio_button" type="radio" value="Voldoende"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Werktempo_radio_button" type="radio" value="Zwak"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Werktempo_radio_button" type="radio" value="Onvoldoende"/><span></span></label>
-                  </th>
-                </tr>
-                <tr>
-                  <th class="notBold">Zelfstandig werken</th>
-                  <th class="center">
-                    <label><input class="with-gap" name="ZelfstandigWerken_radio_button" type="radio" value="Goed"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="ZelfstandigWerken_radio_button" type="radio" value="Voldoende"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="ZelfstandigWerken_radio_button" type="radio" value="Zwak"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="ZelfstandigWerken_radio_button" type="radio" value="Onvoldoende"/><span></span></label>
-                  </th>
-                </tr>
-                <tr>
-                  <th><br>Instelling</th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <th class="notBold">Motivatie</th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Motivatie_radio_button" type="radio" value="Goed"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Motivatie_radio_button" type="radio" value="Voldoende"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Motivatie_radio_button" type="radio" value="Zwak"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Motivatie_radio_button" type="radio" value="Onvoldoende"/><span></span></label>
-                  </th>
-                </tr>
-                <tr>
-                  <th class="notBold">Doorzettingsvermogen</th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Doorzettingsvermogen_radio_button" type="radio" value="Goed"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Doorzettingsvermogen_radio_button" type="radio" value="Voldoende"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Doorzettingsvermogen_radio_button" type="radio" value="Zwak"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Doorzettingsvermogen_radio_button" type="radio" value="Onvoldoende"/><span></span></label>
-                  </th>
-                </tr>
-                <tr>
-                  <th><br>Vaardigheden - Communicatieve</th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <th class="notBold">Vaardigheden</th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Vaardigheden_radio_button" type="radio" value="Goed"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Vaardigheden_radio_button" type="radio" value="Voldoende"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Vaardigheden_radio_button" type="radio" value="Zwak"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="Vaardigheden_radio_button" type="radio" value="Onvoldoende"/><span></span></label>
-                  </th>
-                </tr>
-                <tr>
-                  <th class="notBold">Sociale vaardigheden</th>
-                  <th class="center">
-                    <label><input class="with-gap" name="SocialeVaardigheden_radio_button" type="radio" value="Goed"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="SocialeVaardigheden_radio_button" type="radio" value="Voldoende"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="SocialeVaardigheden_radio_button" type="radio" value="Zwak"/><span></span></label>
-                  </th>
-                  <th class="center">
-                    <label><input class="with-gap" name="SocialeVaardigheden_radio_button" type="radio" value="Onvoldoende"/><span></span></label>
-                  </th>
-                </tr>
-              </table>
+              <div class="row">
+                <div class="pink-text grey lighten-2 col s12 bold">Instelling</div>
+                <div class="col s12 l5">Motivatie</div>
+                <div class="col s12 l7">
+                  <div class="col s3 center"><label><input class="with-gap" name="Motivatie_radio_button" type="radio" value="Goed"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Motivatie_radio_button" type="radio" value="Voldoende"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Motivatie_radio_button" type="radio" value="Zwak"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Motivatie_radio_button" type="radio" value="Onvoldoende"/><span></span></label></div>
+                </div>
+                <div class="col s12 l5">Doorzettingsvermogen</div>
+                <div class="col s12 l7">
+                  <div class="col s3 center"><label><input class="with-gap" name="Doorzettingsvermogen_radio_button" type="radio" value="Goed"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Doorzettingsvermogen_radio_button" type="radio" value="Voldoende"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Doorzettingsvermogen_radio_button" type="radio" value="Zwak"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Doorzettingsvermogen_radio_button" type="radio" value="Onvoldoende"/><span></span></label></div>
+                </div>
+              </div>
 
+              <div class="row">
+                <div class="pink-text grey lighten-2 col s12 bold">Vaardigheden - Communicatieve</div>
+                <div class="col s12 l5">Vaardigheden</div>
+                <div class="col s12 l7">
+                  <div class="col s3 center"><label><input class="with-gap" name="Vaardigheden_radio_button" type="radio" value="Goed"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Vaardigheden_radio_button" type="radio" value="Voldoende"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Vaardigheden_radio_button" type="radio" value="Zwak"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="Vaardigheden_radio_button" type="radio" value="Onvoldoende"/><span></span></label></div>
+                </div>
+                <div class="col s12 l5">Sociale vaardigheden</div>
+                <div class="col s12 l7">
+                  <div class="col s3 center"><label><input class="with-gap" name="SocialeVaardigheden_radio_button" type="radio" value="Goed"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="SocialeVaardigheden_radio_button" type="radio" value="Voldoende"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="SocialeVaardigheden_radio_button" type="radio" value="Zwak"/><span></span></label></div>
+                  <div class="col s3 center"><label><input class="with-gap" name="SocialeVaardigheden_radio_button" type="radio" value="Onvoldoende"/><span></span></label></div>
+                </div>
+              </div>
 
                   <div class="row" style="margin-top: 10px;">
                     <div class="input-field col s12">
-                      <textarea id="toelichting" class="materialize-textarea"></textarea>
+                      <input id="toelichting" type="text" class="validate">
                       <label for="toelichting">Toelichting</label>
                     </div>
                   </div>
@@ -373,15 +317,15 @@
             </div>
             <div class="form_page">
               <div class="col l12 center">
-                <span class="title">Bijzonderheden</span>
+                <div class="title">Bijzonderheden</div>
               </div>
 
               <div class="row">
-                Heeft de leerling een aandoening en/of beperking die van invloed op de studie is of kan zijn?
+                <div class="pink-text bold grey lighten-2 padding">Heeft de leerling een aandoening en/of beperking die van invloed op de studie is of kan zijn?</div>
                 <table>
                   <tr>
                     <th class="notBold">Volgt de leerling speciaal onderwijs?</th>
-                    <th>
+                    <th class="center">
                       <div class="switch">
                         <label>
                           Nee
@@ -394,7 +338,7 @@
                   </tr>
                   <tr>
                     <td class="notBold">Heeft de leerling dyslexie?</td>
-                    <td>
+                    <th class="center">
                       <div class="switch">
                         <label>
                           Nee
@@ -403,11 +347,11 @@
                           Ja
                         </label>
                       </div>
-                    </td>
+                    </th>
                   </tr>
                   <tr>
                     <td class="notBold">Heeft de leerling dyscalculie?</td>
-                    <td>
+                    <td class="center">
                       <div class="switch">
                         <label>
                           Nee
@@ -420,7 +364,7 @@
                   </tr>
                   <tr>
                     <td class="notBold">Is de leerling recent besproken in het extern zorg- en adviesteam (ZAT)</td>
-                    <td>
+                    <td class="center">
                       <div class="switch">
                         <label>
                           Nee
@@ -433,11 +377,11 @@
                   </tr>
                   <tr>
                     <td class="notBold">Ontvangt de leerling nog andere zorg?</td>
-                    <td>
+                    <td class="center">
                       <div class="switch">
                         <label>
                           Nee
-                          <input type="checkbox">
+                          <input type="checkbox" id="toggle_box">
                           <span class="lever"></span>
                           Ja
                         </label>
@@ -448,16 +392,16 @@
             </div>
 
               <div class="row">
-                <div class="input-field col s12">
-                  <textarea id="BijzonderhedenWelkeZorg" class="materialize-textarea"></textarea>
-                  <label for="BijzonderhedenWelkeZorg">Zoja, welke zorg?</label>
+                <div class="input-field col s12" id="toggle_box2">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Zoja, welke zorg?</label>
                 </div>
               </div>
 
               <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="PersoonlijkOmstandigheden" class="materialize-textarea"></textarea>
-                  <label for="PersoonlijkOmstandigheden">andere persoonlijke omstandigheden?</label>
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">andere persoonlijke omstandigheden?</label>
                   <span class="helper-text">Hieronder verstaat het Mediacollege Amsterdam bijzonderheden/beperkingen die van invloed kunnen zijn op het succesvol volgen van de opleiding zoals o.a. epilepsie, slechthorendheid, ADHD, suikerziekte etc.</span>
                 </div>
               </div>
@@ -466,19 +410,18 @@
             </div>
             <div class="form_page">
               <div class="col l12 center">
-                <span class="title">Uw gegevens</span>
+                <div class="title">Uw gegevens</div>
               </div>
 
                 <div class="row">
-                  <div class="col s12 m6 offset-m3">
+                  <div class="col s12 m8 offset-m2 l8 offset-l2 xl6 offset-xl3">
                     <div class="input-field col s12 m7">
                       <input id="naam_mentor" type="text" class="validate">
                       <label for="naam_mentor">Naam mentor</label>
                     </div>
                     <div class="input-field col s12 m5">
                       <select id="opleidingsniveau_select">
-                        <option value="" disabled selected>Kies uw Gender</option>
-                        <option value="Man">Man</option>
+                        <option value="Man" selected>Man</option>
                         <option value="Vrouw">Vrouw</option>
                       </select>
                       <label>Gender</label>
@@ -512,8 +455,7 @@
                     </div>
                     <div class="input-field col s12 m6">
                       <select id="telefonisch_contact">
-                        <option value="" disabled selected>Kies een optie</option>
-                        <option value="yes">Ja</option>
+                        <option value="yes" selected>Ja</option>
                         <option value="no">Nee</option>
                       </select>
                       <label>Telefonisch contact gewenst</label>
@@ -552,6 +494,6 @@
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/form.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
   </body>
 </html>

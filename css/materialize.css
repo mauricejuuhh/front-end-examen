@@ -6450,10 +6450,12 @@ nav {
   .form-center {
     display: table;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    overflow: hidden; }
     .form-center-mid {
       display: table-cell;
-      vertical-align: middle; }
+      vertical-align: middle;
+      overflow: hidden; }
 
 .form-nav {
   width: 270px;
@@ -6479,7 +6481,8 @@ nav {
   font-size: 25px;
   font-weight: 700;
   text-align: center;
-  color: #828282; }
+  color: #828282;
+  padding-bottom: 40px; }
 
 .profile-picture {
   width: 110px;
@@ -6508,7 +6511,7 @@ nav {
 .noPosition {
   position: relative !important; }
 
-.leerweg_input_page, .mvi_radio-tab {
+.leerweg_input_page, .mvi_radio-tab, #toggle_box2 {
   position: relative;
   clear: both;
   display: none; }
@@ -6519,10 +6522,23 @@ nav {
 table {
   font-weight: bold; }
 
+.bold {
+  font-weight: 500; }
+
 .notBold {
   font-weight: 400; }
 
-@media screen and (min-width: 600px) {
+.breakPoint {
+  display: inline-block; }
+
+.common {
+  width: 100%;
+  display: none; }
+
+.padding {
+  padding: 15px 5px; }
+
+@media screen and (min-width: 992px) {
   .ownsidenav {
     position: relative;
     width: 270px;
