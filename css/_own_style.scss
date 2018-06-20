@@ -89,7 +89,6 @@ nav {
 .form_page {
   width: 100%;
 }
-
 table {
   font-weight: bold;
 }
@@ -109,11 +108,21 @@ table {
 .padding {
   padding: 15px 5px;
 }
+.g-recaptcha {
+  margin: auto;
+  width: fit-content;
+}
+.datepicker-controls .select-month input {
+width: auto;
+}
+@media screen and (min-width: 993px) {
+  .sidenav-overlay {
+    display: none;
+  }
 
-@media screen and (min-width: 992px) {
   .ownsidenav {
-    position: relative;
-    width: 270px;
+    position: absolute;
+    width: 300px;
     margin: 0;
     height: 100%;
     padding-bottom: 0;
@@ -128,12 +137,12 @@ table {
   }
 
   .navigation-bar {
-    width: calc(100% - 270px);
+    width: calc(100% - 300px);
   }
   nav {
     display: block;
   }
   .form {
-    width: calc(100% - 270px);
+    width: calc(100% - 300px);
   }
 }

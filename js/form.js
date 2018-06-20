@@ -1,8 +1,24 @@
 $(document).ready(function() {
+
     //Load materialize items
         $('select').formSelect();
     $('.datepicker').datepicker({
         yearRange: 120,
+    });
+
+    $elem = $('.sidenav').sidenav();
+    var instance = M.Sidenav.getInstance($elem);
+    $( window ).resize(function() {
+
+        if ($(window).width() >= 993) {
+            $('.sidenav').css('transform', 'translateX(0)');
+            $('.sidenav').sidenav('draggable', false);
+        } else {
+            instance.close();
+            $('.sidenav').css('transform', 'translateX(-110%)');
+            $('.sidenav').sidenav('draggable', true);
+        }
+
     });
 
 
