@@ -23,10 +23,10 @@
     <li>
         <div class="user-view">
             <div class="background">
-                <img src="images/office.jpg">
+                <img src="images/background-nav.jpg">
             </div>
             <img class="circle user-image" src="images/ma-logo.svg">
-            <span id="nav-name" class="white-text name"></span>
+            <div id="nav-name" class="white-text name">Mediacollege Amsterdam</div>
         </div>
     </li>
     <li><a class="waves-effect menu-button"><i class="material-icons">account_circle</i>Uw info</a></li>
@@ -57,7 +57,7 @@
 
                             <div class="col s12 l5 push-l7">
                                 <div class="img-block profile-picture">
-                                    <img class="user-image" src="images/ma-logo.svg">
+                                    <label for="imgInp"><img class="user-image" id="upload" src="images/ma-logo.svg"></label>
                                 </div>
                             </div>
 
@@ -71,6 +71,7 @@
                                     <input id="birthdate_student" type="text" class="datepicker activeInputField">
                                     <label for="birthdate_student" class="active">Geboortedatum</label>
                                 </div>
+                                <input hidden type='file' id="imgInp" accept="image/*" />
                             </div>
 
 
