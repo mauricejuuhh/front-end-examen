@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4c9289f4-48c6-4640-a5ab-c61340d3c244" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../Welkomscherm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Welkomscherm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/_own_style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/_own_style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/materialize.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/materialize.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helpdesk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../helpdesk/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helpdesk/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../helpdesk/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../helpdesk/js/form_send.js" beforeDir="false" afterPath="$PROJECT_DIR$/../helpdesk/js/form_send.js" afterDir="false" />
@@ -34,7 +31,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.40937284">
+    <splitter split-orientation="horizontal" split-proportion="0.48104754">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="recaptcha.js" pinned="false" current-in-tab="false">
@@ -49,8 +46,8 @@
           <file leaf-file-name="form.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/form.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="452">
-                  <caret line="292" lean-forward="true" selection-start-line="292" selection-end-line="292" />
+                <state relative-caret-position="214">
+                  <caret line="273" column="45" lean-forward="true" selection-start-line="273" selection-start-column="45" selection-end-line="273" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -62,11 +59,9 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+                <state relative-caret-position="254">
+                  <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="54" />
                   <folding>
-                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -124,9 +119,9 @@
       <find>mvi_radio</find>
       <find>$mvi_radio_value2</find>
       <find>toggle_box</find>
-      <find>leerweg</find>
       <find>title</find>
       <find>form</find>
+      <find>leerweg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,9 +145,9 @@
         <option value="$PROJECT_DIR$/../Welkomscherm/php/temperatuur.php" />
         <option value="$PROJECT_DIR$/css/components/_variables.scss" />
         <option value="$PROJECT_DIR$/php/recaptcha.php" />
-        <option value="$PROJECT_DIR$/js/form.js" />
         <option value="$PROJECT_DIR$/css/_own_style.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/form.js" />
       </list>
     </option>
   </component>
@@ -270,12 +265,12 @@
       <workItem from="1529566402778" duration="21126000" />
       <workItem from="1529766031770" duration="72000" />
       <workItem from="1529909661021" duration="21515000" />
-      <workItem from="1529998936228" duration="7730000" />
+      <workItem from="1529998936228" duration="9039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163558000" />
+    <option name="totallyTimeSpent" value="164867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -327,8 +322,6 @@
         <state relative-caret-position="1088">
           <caret line="199" column="46" selection-start-line="199" selection-start-column="46" selection-end-line="199" selection-end-column="46" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -354,8 +347,6 @@
         <state relative-caret-position="2618">
           <caret line="154" column="64" selection-start-line="154" selection-start-column="64" selection-end-line="154" selection-end-column="64" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -537,13 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="292" lean-forward="true" selection-start-line="292" selection-end-line="292" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/_own_style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -553,11 +537,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="254">
+          <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="54" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -566,6 +548,13 @@
             <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="273" column="45" lean-forward="true" selection-start-line="273" selection-start-column="45" selection-end-line="273" selection-end-column="45" />
         </state>
       </provider>
     </entry>

@@ -271,7 +271,7 @@ $checkTheForm = function () {
     }
     
     //opleiding tab
-    if ($('.leerweg_select').val() == null) {
+    if ($('#leerweg_select').val() == null) {
         $invalidHighlichtMenu(1);
         $pageInvalid(1);
         $feedbackSend = false;
