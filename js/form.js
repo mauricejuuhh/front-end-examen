@@ -126,12 +126,35 @@ $(document).ready(function() {
 
 
     // nav menu top name: changes name when it is changed
-    $('#Form_firstname').change(function () {
+    $('#form_firstname').change(function () {
         $("#nav-name").fadeOut(function () {
-            $(this).text($('#Form_firstname').val());
+
+            if ($('#form_firstname').val() == "") {
+                $(this).text("Mediacollege Amsterdam");
+            } else {
+                $(this).text($('#form_firstname').val());
+            }
         }).fadeIn();
     });
 
+
+//    Image upload
+    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                $('.user-image').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#imgInp").change(function() {
+        readURL(this);
+    });
 
 
 // "opleiding" form tab
