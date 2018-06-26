@@ -3258,14 +3258,14 @@ nav {
 
 @media only screen and (min-width: 601px) {
   nav.nav-extended .nav-wrapper {
-    min-height: 64px; }
+    min-height: 56px; }
 
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
-    height: 64px;
-    line-height: 64px; }
+    height: 56px;
+    line-height: 56px; }
 
   .navbar-fixed {
-    height: 64px; } }
+    height: 56px; } }
 a {
   text-decoration: none; }
 
@@ -6434,19 +6434,25 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem; } }
 nav {
-  display: none; }
+  display: block !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  height: 56px !important;
+  line-height: 56px !important; }
 
 .nopadding {
   padding: 0 !important; }
 
 .form {
-  height: calc(100% - 45px);
   width: 100%;
   float: left;
   position: absolute;
-  top: 0;
   right: 0;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  height: calc(100% - 101px);
+  top: 56px; }
   .form-center {
     display: table;
     width: 100%;
@@ -6482,7 +6488,7 @@ nav {
   font-weight: 700;
   text-align: center;
   color: #828282;
-  padding-bottom: 40px; }
+  padding-bottom: 15px !important; }
 
 .profile-picture {
   width: 110px;
@@ -6511,7 +6517,7 @@ nav {
 .noPosition {
   position: relative !important; }
 
-.leerweg_input_page, .mvi_radio-tab, #toggle_box2 {
+.leerweg_input_page, .mvi_radio-tab, #toggle_box2, #verstuurrow, .form_send_page {
   position: relative;
   clear: both;
   display: none; }
@@ -6538,14 +6544,25 @@ table {
 .padding {
   padding: 15px 5px; }
 
-.g-recaptcha {
+#grecaptcha {
+  width: fit-content;
   margin: auto;
-  width: fit-content; }
+  display: inline-block; }
 
 .datepicker-controls .select-month input {
   width: auto; }
 
+.invalid_highlighted {
+  background-color: #ffdfdf; }
+
+.form_page_invalid {
+  display: none;
+  padding: 15px 0; }
+
 @media screen and (min-width: 993px) {
+  nav {
+    display: none !important; }
+
   .sidenav-overlay {
     display: none; }
 
@@ -6571,6 +6588,8 @@ table {
     display: block; }
 
   .form {
-    width: calc(100% - 300px); } }
+    width: calc(100% - 300px);
+    height: calc(100% - 45px);
+    top: 0; } }
 
 /*# sourceMappingURL=materialize.css.map */

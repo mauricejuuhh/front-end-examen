@@ -5,5 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jquery-3.2.1.slim" level="application" />
+    <orderEntry type="module" module-name="helpdesk" />
+    <orderEntry type="module" module-name="Welkomscherm" />
   </component>
 </module>
