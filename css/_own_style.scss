@@ -142,6 +142,13 @@ display: none;
 #upload {
   cursor: pointer;
 }
+h1, h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 18px;
+  margin: 0;
+}
 @media screen and (min-width: 993px) {
   nav {
     display: none !important;
