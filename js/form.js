@@ -31,6 +31,7 @@ $(document).ready(function() {
         $GoToPage($clickedNavElement);
     });
 
+    $("#leerweg_select").val($("#leerweg_select option:first").val());
 
 
 
@@ -206,7 +207,7 @@ $(document).ready(function() {
         $mvi_radio_value2 = $('input[name="mvi_radio"]:checked').val();
 
         $('.form_check_leerweg_input').removeClass("activeInputField");
-        
+
         if ($leerweg_select_val === "0") {
 
             if ($mvi_radio_value2 === "1") {
@@ -262,7 +263,7 @@ $pageInvalid = function($pageid) {
     if ($pageToGo == null) {
         $pageToGo = $pageid;
         $GoToPage($pageToGo);
-    }  
+    }
 };
 
 $checkTheForm = function () {
@@ -292,7 +293,7 @@ $checkTheForm = function () {
         });
 
     }
-    
+
     //opleiding tab
     if ($('#leerweg_select').val() == null) {
         $invalidHighlichtMenu(1);
