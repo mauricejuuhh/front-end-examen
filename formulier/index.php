@@ -10,7 +10,7 @@
     <meta name="web_author" content="Maurice de Jong">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
     <meta name="theme-color" content="#424242">
 
     <meta property="og:url" content="https://frozenbutton.eu/front/">
@@ -25,7 +25,7 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="Het inlichtingenformulier van Mediacollege Amsterdam">
 
-     <meta name="twitter:image" content="https://frozenbutton.eu/front/images/ma.png">
+    <meta name="twitter:image" content="https://frozenbutton.eu/front/images/ma.png">
     <meta name="twitter:title" content="Mediacollege Inlichtingenformulier">
     <meta name="twitter:description" content="Het inlichtingenformulier van Mediacollege Amsterdam">
     <meta name="twitter:site" content="https://frozenbutton.eu/front/">
@@ -36,12 +36,17 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../css/materialize.css" media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 </head>
-
+<?php
+$uw_email = isset($_GET["uw_email"])? $_GET["uw_email"] : null;
+$naam = isset($_GET["naam"])? $_GET["naam"] : null;
+$opleiding = isset($_GET["naam"])? $_GET["naam"] : null;
+$email_mentor = isset($_POST["email_mentor"])? $_POST["email_mentor"] : null;
+?>
 <body class="grey lighten-3">
 
 <nav class="grey darken-2">
@@ -53,9 +58,9 @@
     <li>
         <div class="user-view">
             <div class="background">
-                <img src="images/background-nav.jpg" alt="Mediacollege school">
+                <img src="../images/background-nav.jpg" alt="Mediacollege school">
             </div>
-            <img class="circle user-image" src="images/ma-logo.svg" alt="Mediacollege logo">
+            <img class="circle user-image" src="../images/ma-logo.svg" alt="Mediacollege logo">
             <div id="nav-name" class="white-text name">Mediacollege Amsterdam</div>
         </div>
     </li>
@@ -87,18 +92,18 @@
 
                             <div class="col s12 l5 push-l7">
                                 <div class="img-block profile-picture">
-                                    <label for="imgInp"><img class="user-image" id="upload" src="images/ma-logo.svg" alt="Mediacollege logo"></label>
+                                    <label for="imgInp"><img class="user-image" id="upload" src="../images/ma-logo.svg" alt="Mediacollege logo"></label>
                                 </div>
                             </div>
 
 
                             <div class="col s12 l7 pull-l5">
                                 <div class="input-field col s12">
-                                    <input id="form_firstname" type="text" class="activeInputField">
+                                    <input id="form_firstname" name="Naam" type="text" class="activeInputField" value="<?php if (isset($naam)) {echo $naam;} ?>">
                                     <label for="form_firstname">Naam leerling</label>
                                 </div>
                                 <div class="input-field col s12">
-                                    <input id="birthdate_student" type="text" class="datepicker activeInputField">
+                                    <input id="birthdate_student" name="Geboortedatum" type="text" class="datepicker activeInputField">
                                     <label for="birthdate_student" class="active">Geboortedatum</label>
                                 </div>
                                 <input hidden type='file' id="imgInp" accept="image/*" />
@@ -118,7 +123,7 @@
                 <div class="row">
                     <div class="col s12 offset-l1 l10">
                         <div class="input-field col s12 center">
-                            <select id="leerweg_select" class="form_check_input">
+                            <select name="Leerweg" id="leerweg_select" class="form_check_input">
                                 <option value="" disabled selected>Kies een leerweg</option>
                                 <option value="0">vmbo</option>
                                 <option value="1">havo</option>
@@ -132,23 +137,23 @@
 
                         <div class="leerweg_input_page">
                             <div class="input-field col s12 m6 center">
-                                <select id="select_niveau">
-                                    <option value="vmbo" selected>bb</option>
-                                    <option value="havo">kb</option>
-                                    <option value="vwo">gl</option>
-                                    <option value="mbo">tl</option>
-                                    <option value="anders">lwt</option>
-                                    <option value="anders">+ lwoo</option>
+                                <select name="Niveau" id="select_niveau">
+                                    <option value="bb" selected>bb</option>
+                                    <option value="kb">kb</option>
+                                    <option value="gl">gl</option>
+                                    <option value="tl">tl</option>
+                                    <option value="lwt">lwt</option>
+                                    <option value="+ lwoo">+ lwoo</option>
                                 </select>
                                 <label for="select_niveau">Niveau</label>
                             </div>
 
                             <div class="input-field col s12 m6">
-                                <select id="select_sector">
-                                    <option value="vmbo" selected>Economie</option>
-                                    <option value="havo">Landbouw</option>
-                                    <option value="vwo">Techniek</option>
-                                    <option value="mbo">zorg & welzijn</option>
+                                <select name="Sector" id="select_sector">
+                                    <option value="Economie" selected>Economie</option>
+                                    <option value="Landbouw">Landbouw</option>
+                                    <option value="Techniek">Techniek</option>
+                                    <option value="zorg & welzijn">zorg & welzijn</option>
                                 </select>
                                 <label for="select_sector">Sector</label>
                             </div>
@@ -170,7 +175,7 @@
 
                             <div class="mvi_radio-tab">
                                 <div class="input-field col s12">
-                                    <input id="mvi_explanation" type="text" class="form_check_leerweg_input">
+                                    <input name="Mvi toelichting" id="mvi_explanation" type="text" class="form_check_leerweg_input">
                                     <label for="mvi_explanation">zo ja welke:</label>
                                 </div>
                             </div>
@@ -179,9 +184,9 @@
                             <div class="col s12">
                                 Diploma
                                 <div class="input-field inline">
-                                    <select id="select_diploma-vmbo">
-                                        <option value="vmbo" selected>behaald</option>
-                                        <option value="havo">te behalen</option>
+                                    <select name="Naam" id="select_diploma-vmbo">
+                                        <option value="behaald" selected>behaald</option>
+                                        <option value="te behalen">te behalen</option>
                                     </select>
                                 </div>
 
@@ -516,7 +521,7 @@
                                 <div class="switch">
                                     <label>
                                         Nee
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="check1">
                                         <span class="lever"></span>
                                         Ja
                                     </label>
@@ -529,7 +534,7 @@
                                 <div class="switch">
                                     <label>
                                         Nee
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="check2">
                                         <span class="lever"></span>
                                         Ja
                                     </label>
@@ -542,7 +547,7 @@
                                 <div class="switch">
                                     <label>
                                         Nee
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="check3">
                                         <span class="lever"></span>
                                         Ja
                                     </label>
@@ -557,7 +562,7 @@
                                 <div class="switch">
                                     <label>
                                         Nee
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="check4">
                                         <span class="lever"></span>
                                         Ja
                                     </label>
@@ -606,7 +611,7 @@
                 <div class="row">
                     <div class="col s12 m8 offset-m2 l8 offset-l2 xl6 offset-xl3">
                         <div class="input-field col s12 m7">
-                            <input id="naam_mentor" type="text" class="activeInputField">
+                            <input id="naam_mentor" type="text" class="activeInputField" value="<?php if (isset($email_mentor)) {echo $email_mentor;} ?>">
                             <label for="naam_mentor">Naam mentor</label>
                         </div>
                         <div class="input-field col s12 m5">
@@ -667,11 +672,11 @@
                 </div>
 
                 <div class="row">
-                        <div id="verstuurrow" class="col s12 center">
-                                <button class="btn waves-effect waves-light" type="submit" id="sendbutton" name="action">Verstuur
-                                    <i class="material-icons right">send</i>
-                                </button>
-                        </div>
+                    <div id="verstuurrow" class="col s12 center">
+                        <button class="btn waves-effect waves-light" type="submit" id="sendbutton" name="action">Verstuur
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
                 </div>
 
             </div>
@@ -680,13 +685,13 @@
             <div class="form_send_page">
                 <div class="title col s12">Uw formulier is verzonden</div>
                 <div class="col s12 center pink-text">Uw formulier is goed bij ons aangekomen.<br>
-                Heeft u vragen over dit formulier? Dan kunt u ze altijd stellen via de e-mail:<br>
+                    Heeft u vragen over dit formulier? Dan kunt u ze altijd stellen via de e-mail:<br>
                     info@ma-web.nl</div>
             </div>
 
-         </main>
+        </main>
 
-     </div>
+    </div>
 </div>
 
 <div class="navigation-bar col l12 grey lighten-2">
@@ -700,8 +705,12 @@
 <!--JavaScript at end of body for optimized loading-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://www.google.com/recaptcha/api.js?onload=loadapi&render=explicit" async defer></script>
-<script src="js/recaptcha.min.js"></script>
-<script src="js/form.min.js"></script>
-<script src="js/materialize.min.js"></script>
+<script src="../js/recaptcha.js"></script>
+<script>
+    $uw_email = "<?php if (isset($uw_email)) {echo $uw_email;} ?>";
+    $opleiding = "<?php if (isset($opleiding)) {echo $opleiding;} ?>";
+</script>
+<script src="../js/form.js"></script>
+<script src="../js/materialize.min.js"></script>
 </body>
 </html>
