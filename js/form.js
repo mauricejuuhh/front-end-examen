@@ -318,7 +318,26 @@ $checkTheForm = function () {
 return $feedbackSend;
 };
 
+$switchToText = function(param) {
+  if (param == 0) {
+      return "nee";
+  }  else if (param == 1) {
+      return "ja";
+  }
+};
 
+
+    var string = "";
+    $makeaJson = function(name, value) {
+        if (value == "") {
+            value = "geen opgegeven";
+        }
+        string += "&" + encodeURI(name) +"=" + encodeURI(value);
+
+
+    };
+
+//form fully completed script
 $('#sendbutton').click(function () {
     if ($checkTheForm()) {
         $('.form_page').fadeOut(250);
@@ -326,8 +345,52 @@ $('#sendbutton').click(function () {
         $('button').addClass("disabled");
         $('.btn-small').addClass("disabled");
         $finished = 1;
+
+        string += "?" + encodeURI("Voornaam") +"=" + encodeURI($('#form_firstname').val());
+        // $makeaJson("Voornaam", $('#form_firstname').val());
+        $makeaJson("Geboorte datum", $('#birthdate_student').val());
+        $makeaJson("Leerweg", $( "#leerweg_select option:selected" ).text());
+        $makeaJson("Niveau", $('#select_niveau').val());
+        $makeaJson("Sector", $('#select_sector').val());
+        $makeaJson("MVI", $('input[name=mvi_radio]:checked').val());
+        $makeaJson("MVI toelichting", $('#mvi_explanation').val());
+        $makeaJson("Diploma", $('#select_diploma-vmbo').val());
+        $makeaJson("Diploma datum", $('#diploma_date').val());
+        $makeaJson("Diploma1", $('#select_diploma-havo-vwo').val());
+        $makeaJson("Diploma datum1", $('#date-diploma-havo-vwo').val());
+        $makeaJson("Overgangsbewijs jaar", $('#input_year1').val());
+        $makeaJson("Naar jaar", $('#input_year2').val());
+        $makeaJson("Lerweg1", $('#select_leerweg').val());
+        $makeaJson("Opleidings niveau", $('#select_opleidingsniveau').val());
+        $makeaJson("Consentratie", $('input[name=Consentratie_radio_button]:checked').val());
+        $makeaJson("Werktempo", $('input[name=Werktempo_radio_button]:checked').val());
+        $makeaJson("Zelfstandig werken", $('input[name=ZelfstandigWerken_radio_button]:checked').val());
+        $makeaJson("Motivatie", $('input[name=Motivatie_radio_button]:checked').val());
+        $makeaJson("Doorzettingsvermogen", $('input[name=Doorzettingsvermogen]:checked').val());
+        $makeaJson("Vaardigheden", $('input[name=Vaardigheden_radio_button]:checked').val());
+        $makeaJson("Sociale vaardigheden", $('input[name=SocialeVaardigheden_radio_button]:checked').val());
+        $makeaJson("Indruk toelichting", $('#input_toelichting').val());
+        $makeaJson("Speciaal onderwijs", $switchToText($('#check1').is(":checked")));
+        $makeaJson("Dyslexie", $switchToText($('#check2').is(":checked")));
+        $makeaJson("Dyscalculie", $switchToText($('#check3').is(":checked")));
+        $makeaJson("Extern zorg", $switchToText($('#check4').is(":checked")));
+        $makeaJson("Andere zorg", $switchToText($('#toggle_box').is(":checked")));
+        $makeaJson("Andere zorg Toelichting", $('#input_zorg1').val());
+        $makeaJson("naam mentor", $('#naam_mentor').val());
+        $makeaJson("gender mentor", $('#gender_mentor').val());
+        $makeaJson("functie mentor", $('#functie_mentor').val());
+        $makeaJson("email mentor", $('#email_mentor').val());
+        $makeaJson("naam school", $('#naam_School_mentor').val());
+        $makeaJson("plaats mentor", $('#plaats_mentor').val());
+        $makeaJson("telefoon mentor", $('#telefoon_mentor').val());
+        $makeaJson("Telefoon contact gewenst", $('#telefonisch_contact_mentor').val());
+        $makeaJson("uw_email", $uw_email);
+        $makeaJson("send_email", "1");
+
+        // string += "Telefoon contact gewenst:" + $('#telefonisch_contact_mentor').val();
+        $.post('/php/sendFormFeedback.php' + string);
     }
 });
-    // setTimeout(function(){ $checkTheForm();  }, 5000);
+
 
 });

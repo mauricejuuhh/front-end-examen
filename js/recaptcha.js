@@ -16,7 +16,7 @@ var verifyCallback = function() {
 function CheckRecaptchaa() {
     console.log("debug");
     var http = new XMLHttpRequest();
-    var url = "php/recaptcha.php";
+    var url = "/php/recaptcha.php";
     var params = "api=" + grecaptcha.getResponse(captha);
     http.open("POST", url, true);
 
